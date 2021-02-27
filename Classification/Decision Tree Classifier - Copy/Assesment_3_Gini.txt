@@ -1,0 +1,29 @@
+Enter path to 'training set' file: 
+Assesment3.xlsx
+
+Generate_decision_tree(training_data, columns)
+     Node: Value of tears is in (2L,) ?
+     if yes then
+         Node: Value of astig is in (2L,) ?
+         if yes then
+             Node: Value of specRx is in (2L,) ?
+             if yes then
+                 Node: Value of age is in (2L, 3L) ?
+                 if yes then
+                     leaf: [3]
+                 if no then
+                     leaf: [1]
+             if no then
+                 leaf: [1]
+         if no then
+             Node: Value of age is in (1L, 2L) ?
+             if yes then
+                 leaf: [2]
+             if no then
+                 Node: Value of specRx is in (2L,) ?
+                 if yes then
+                     leaf: [2]
+                 if no then
+                     leaf: [3]
+     if no then
+         leaf: [3]

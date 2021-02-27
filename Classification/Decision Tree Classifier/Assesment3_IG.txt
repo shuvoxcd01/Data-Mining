@@ -1,0 +1,40 @@
+Enter path to 'training set' file: 
+Assesment3.xlsx
+
+Generate_decision_tree(training_data, columns)
+[Attribute: tears  I.G.: 0.548794940695 ]     [Attribute: age  I.G.: 0.0393965036461 ]     [Attribute: astig  I.G.: 0.377005230011 ]     [Attribute: specRx  I.G.: 0.0395108354236 ]    
+     Node: tears
+     if  tears  ==  1  then
+         leaf: [3]
+     if  tears  ==  2  then
+[Attribute: specRx  I.G.: 0.0954372523106 ]     [Attribute: astig  I.G.: 0.770426041486 ]     [Attribute: age  I.G.: 0.221251836004 ]    
+         Node: astig
+         if  astig  ==  1  then
+[Attribute: age  I.G.: 0.316689088315 ]     [Attribute: specRx  I.G.: 0.190874504621 ]    
+             Node: age
+             if  age  ==  1  then
+                 leaf: [2]
+             if  age  ==  2  then
+                 leaf: [2]
+             if  age  ==  3  then
+[Attribute: specRx  I.G.: 1.0 ]    
+                 Node: specRx
+                 if  specRx  ==  1  then
+                     leaf: [3]
+                 if  specRx  ==  2  then
+                     leaf: [2]
+         if  astig  ==  2  then
+[Attribute: age  I.G.: 0.251629167388 ]     [Attribute: specRx  I.G.: 0.459147917027 ]    
+             Node: specRx
+             if  specRx  ==  1  then
+                 leaf: [1]
+             if  specRx  ==  2  then
+[Attribute: age  I.G.: 0.918295834054 ]    
+                 Node: age
+                 if  age  ==  1  then
+                     leaf: [1]
+                 if  age  ==  2  then
+                     leaf: [3]
+                 if  age  ==  3  then
+                     leaf: [3]
+Out[2]: <Node.Node instance at 0x000000000CAF6308>

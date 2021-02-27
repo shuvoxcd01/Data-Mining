@@ -1,0 +1,135 @@
+Enter path to 'training set' file: 
+Assesment3.xlsx
+
+Generate_decision_tree(training_data, columns)
+Gini Index values of  age
+(1L,)     0.526041666667
+(2L,)     0.536458333333
+(3L,)     0.526041666667
+(1L, 2L)     0.526041666667
+(1L, 3L)     0.536458333333
+(2L, 3L)     0.526041666667
+Gini Index values of  specRx
+(1L,)     0.527777777778
+(2L,)     0.527777777778
+Gini Index values of  astig
+(1L,)     0.465277777778
+(2L,)     0.465277777778
+Gini Index values of  tears
+(1L,)     0.326388888889
+(2L,)     0.326388888889
+Attributes and split criterion and their Gini Index Values: 
+{u'specRx': (2L,)}      0.527777777778
+{u'age': (2L, 3L)}      0.526041666667
+{u'tears': (2L,)}      0.326388888889
+{u'astig': (2L,)}      0.465277777778
+     Node: Value of tears is in (2L,) ?
+     if yes then
+Gini Index values of  age
+(1L,)     0.604166666667
+(2L,)     0.645833333333
+(3L,)     0.604166666667
+(1L, 2L)     0.604166666667
+(1L, 3L)     0.645833333333
+(2L, 3L)     0.604166666667
+Gini Index values of  specRx
+(1L,)     0.611111111111
+(2L,)     0.611111111111
+Gini Index values of  astig
+(1L,)     0.361111111111
+(2L,)     0.361111111111
+Gini Index values of  tears
+(2L,)     0.652777777778
+Attributes and split criterion and their Gini Index Values: 
+{u'tears': (2L,)}      0.652777777778
+{u'astig': (2L,)}      0.361111111111
+{u'age': (2L, 3L)}      0.604166666667
+{u'specRx': (2L,)}      0.611111111111
+         Node: Value of astig is in (2L,) ?
+         if yes then
+Gini Index values of  age
+(1L,)     0.333333333333
+(2L,)     0.416666666667
+(3L,)     0.416666666667
+(1L, 2L)     0.416666666667
+(1L, 3L)     0.416666666667
+(2L, 3L)     0.333333333333
+Gini Index values of  specRx
+(1L,)     0.222222222222
+(2L,)     0.222222222222
+Gini Index values of  astig
+(2L,)     0.444444444444
+Gini Index values of  tears
+(2L,)     0.444444444444
+Attributes and split criterion and their Gini Index Values: 
+{u'specRx': (2L,)}      0.222222222222
+{u'age': (2L, 3L)}      0.333333333333
+{u'tears': (2L,)}      0.444444444444
+             Node: Value of specRx is in (2L,) ?
+             if yes then
+Gini Index values of  age
+(1L,)     0.0
+(2L,)     0.333333333333
+(3L,)     0.333333333333
+(1L, 2L)     0.333333333333
+(1L, 3L)     0.333333333333
+(2L, 3L)     0.0
+Gini Index values of  specRx
+(2L,)     0.444444444444
+Gini Index values of  astig
+(2L,)     0.444444444444
+Gini Index values of  tears
+(2L,)     0.444444444444
+Attributes and split criterion and their Gini Index Values: 
+{u'age': (2L, 3L)}      0.0
+{u'tears': (2L,)}      0.444444444444
+                 Node: Value of age is in (2L, 3L) ?
+                 if yes then
+                     leaf: [3]
+                 if no then
+                     leaf: [1]
+             if no then
+                 leaf: [1]
+         if no then
+Gini Index values of  age
+(1L,)     0.25
+(2L,)     0.25
+(3L,)     0.166666666667
+(1L, 2L)     0.166666666667
+(1L, 3L)     0.25
+(2L, 3L)     0.25
+Gini Index values of  specRx
+(1L,)     0.222222222222
+(2L,)     0.222222222222
+Gini Index values of  astig
+(1L,)     0.277777777778
+Gini Index values of  tears
+(2L,)     0.277777777778
+Attributes and split criterion and their Gini Index Values: 
+{u'specRx': (2L,)}      0.222222222222
+{u'age': (1L, 2L)}      0.166666666667
+{u'tears': (2L,)}      0.277777777778
+             Node: Value of age is in (1L, 2L) ?
+             if yes then
+                 leaf: [2]
+             if no then
+Gini Index values of  age
+(3L,)     0.5
+Gini Index values of  specRx
+(1L,)     0.0
+(2L,)     0.0
+Gini Index values of  astig
+(1L,)     0.5
+Gini Index values of  tears
+(2L,)     0.5
+Attributes and split criterion and their Gini Index Values: 
+{u'tears': (2L,)}      0.5
+{u'specRx': (2L,)}      0.0
+                 Node: Value of specRx is in (2L,) ?
+                 if yes then
+                     leaf: [2]
+                 if no then
+                     leaf: [3]
+     if no then
+         leaf: [3]
+Out[91]: <Node.Node instance at 0x000000000CC38908>
